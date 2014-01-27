@@ -43,6 +43,25 @@
         line-height: 1;
         margin: 20px auto;
       }
+
+      .portfolio-item {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 400px;
+        margin: 0 auto 30px;
+      }
+
+      .other-sponsors {
+        text-align: center;
+      }
+
+      @media (max-width: 992px) {
+        /* Allows responsive design */
+        .portfolio-item {
+          display: block;
+        }
+      }
     </style>
   
     <!-- Full Page Image Header Area -->
@@ -95,7 +114,7 @@
     <!-- /Call to Action -->
 
     <!-- Sponsors -->
-    <div id="portfolio" class="call-to-action">
+    <div id="portfolio" class="about">
       <div class="container">
 
         <div class="row">
@@ -106,90 +125,44 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>TicketLeap</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://www.arcweb.co/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/arcweb.png" alt="Arcweb" /></a>
           </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>Cloudmine</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://useartisan.com/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/artisan.png" alt="Artisan Mobile" /></a>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <!-- <img class="img-portfolio img-responsive" src="img/sponsor-logos/curalate.png" alt="Curalate" /> -->
-              <h3>Curalate</h3>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>Monetate</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://www.curalate.com/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/curalate.png" alt="Curalate" /></a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>Vistar Media</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://monetate.com/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/monetate.png" alt="Monetate" /></a>
           </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>Artisan Mobile</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://www.ticketleap.com/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/ticketleap.png" alt="TicketLeap" /></a>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>SnipSnap</h3>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>Squareknot</h3>
-            </div>
+          <div class="col-md-4 portfolio-item">
+            <a href="http://www.vistarmedia.com/"><img class="img-portfolio img-responsive" src="img/sponsor-logos/vistarmedia.png" alt="Vistar Media" /></a>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>Arcweb</h3>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>RJMetrics</h3>
-            </div>
-          </div>
+        <div class="row other-sponsors">
+          <h2>
+            <div class="col-md-4">Azavea</div>
+            <div class="col-md-4">Cloudmine</div>
+            <div class="col-md-4">Cipher Prime</div>
+          </h2>
         </div>
 
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>Cipher Prime</h3>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <h3>Mentor Tech</h3>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <h3>Azavea</h3>
-            </div>
-          </div>
+        <div class="row other-sponsors">
+          <h2>
+            <div class="col-md-3">Mentor Tech</div>
+            <div class="col-md-3">RJMetrics</div>
+            <div class="col-md-3">SnipSnap</div>
+            <div class="col-md-3">Squareknot</div>
+          </h2>
         </div>
 
       </div>
