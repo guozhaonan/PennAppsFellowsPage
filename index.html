@@ -60,6 +60,17 @@
         text-align: center;
       }
 
+      .header-button {
+        margin: 0 20px;
+        width: 150px
+      }
+
+      ul li {
+        font-size: 21px;
+        line-height: 1.4;
+        margin: 0;
+      }
+
       @media (max-width: 992px) {
         /* Allows responsive design */
         .sponsor-item {
@@ -72,49 +83,63 @@
     <div id="top" class="header">
       <div class="vert-text">
         <img class="img-responsive" style="display: inline-block" src="assets/logo-white.png" />
-        <h3 style="color: white;">Bringing Talented Students to Philly Startups</h3>
+        
+        <h3 style="color: white;">Intern at a Philly Startup over Summer 2014</h3>
+        <a href="#about" class="btn btn-default btn-lg header-button">More Info</a><a href="https://docs.google.com/forms/d/1cifrPo7IFWqT80AP5jHfz_ScfVCi0gZBHSSDp-8rDK0/viewform" class="btn btn-primary btn-lg header-button">Apply Now</a>
       </div>
     </div>
     <!-- /Full Page Image Header Area -->
   
-    <!-- Intro -->
+    <!-- About -->
     <div id="about" class="about">
       <div class="container">
         <div class="col-md-6 col-md-offset-3 text-center">
-          <h1>Students + Philly = Growth</h1>
+          <h1>About PennApps Fellows</h1>
           <hr/>
           <p class="lead">
-            The PennApps Fellows program is a 10-week summer internship program that will pair talented students from across the nation with the best Philly-area tech startups, cultivating a community of students who are actively involved in the local startup scene.
-            <br />
-          </p>
-          <p style="text-align: center;"> 
-            <a href="assets/program-overview.pdf" class="btn btn-lg btn-primary">Program Overview</a>
-          </p>
+            PennApps Fellows is a student-run organization that pairs talented students from around the country to startups in Philadelphia for a 10-week (June 2nd to August 10th) summer internship. If accepted into the program, you will work closely with a local Philly startup and partake in many of our program's features.</p>         
         </div>
       </div>
     </div>
-    <!-- /Intro -->
+    <!-- /About -->
 
-    <!-- Call to Action -->
+    <!-- Program Features -->
     <div class="services">
       <div class="container">
         <div class="col-md-6 col-md-offset-3 text-center">
-          <h1>Help Us Build Philly</h1>
+          <h1>Program Features</h1>
           <hr/>
-          <p style="font-size: 30px; font-weight: bold; text-align: center;" class="lead">
-            Sponsor PennApps Fellows:
-            <ul class="fa-ul fa-2x">
-              <li><i class="fa-li fa fa-check-square-o"></i><strong>Host an Intern for the Summer</strong></li>
-              <li><i class="fa-li fa fa-check-square-o"></i><strong>Host an Event</strong> <em>(technical, business, social, etc.)</em></li>
-              <li><i class="fa-li fa fa-check-square-o"></i><strong>Help Us Pay for Program Costs</strong> <em>(Fellows Housing, Program Dinners, Philly Tours, etc.)</em></li>
-              <li><i class="fa-li fa fa-check-square-o"></i><strong>Other Ideas?</strong> Get in Touch!</li>
-            </ul>
-            <h3>Contact Information: <a href="mailto:fellows@pennapps.com">fellows@pennapps.com</a></h3>
+          <p style="font-size: 30px; text-align: center;" class="lead">
+            <ol class="fa-ul fa-2x">
+              <li><i class="fa-li fa fa-check-square-o"></i>Free Provided Housing</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>Local Philly Tours</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>Tech Talks</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>Speaker Events</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>Restaurant Outings</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>Networking Opportunities</li>
+              <li><i class="fa-li fa fa-check-square-o"></i>And More</li>
+            </ol>
           </p>
         </div>
       </div>
     </div>
-    <!-- /Call to Action -->
+    <!-- /Program Features -->
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h1>Application Info</h1>
+          <hr/>
+          <ul>
+            <li>Application is open until March 7th</li>
+            <li>After application closes, we will review all applicants</li>
+            <li>We will invite some to second round interviews</li>
+            <li>After interviews, we will select students to be accepted into the program</li>
+          </ul>
+          <a href="https://docs.google.com/forms/d/1cifrPo7IFWqT80AP5jHfz_ScfVCi0gZBHSSDp-8rDK0/viewform" class="btn btn-primary btn-lg header-button">Apply Now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Sponsors -->
     <div id="portfolio" class="about">
@@ -206,6 +231,25 @@
 
     ga('create', 'UA-46216497-2', 'pennapps.com');
     ga('send', 'pageview');
+    </script>
+
+    <!-- Smooth Scrolling Page Button -->
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
     </script>
     
   </body>
